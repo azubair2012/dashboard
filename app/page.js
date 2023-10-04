@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+
 import Cards from "/app/components/Cards.jsx";
 import Settings from "/app/components/Settings.jsx";
 import Homepage from "/app/components/Home.jsx";
@@ -10,7 +10,7 @@ export default function Home() {
   const [Display, setDisplay] = useState(<Homepage />);
   return (
     <main className="bg-[url('/img/pexels-terje-sollie-312029.jpg')] bg-cover h-screen flex justify-center items-center gap-20">
-      <div className="text-white text-4xl border-[1px] border-[#cecbc3] rounded-full h-fit w-fit flex flex-col items-center justify-evenly px-4 py-4 gap-4 overflow-hidden backdrop-blur-sm">
+      <div className="text-white text-4xl border-[1px] border-greenbod rounded-full h-fit w-fit flex flex-col items-center justify-evenly px-4 py-4 gap-4 overflow-hidden backdrop-blur-sm">
         <GoHome
           className="cursor-pointer"
           onClick={() => {
@@ -42,7 +42,7 @@ export default function Home() {
           }}
         />
       </div>
-      <div className="text-white text-4xl border-[1px] border-[#cecbc3] rounded-3xl h-[780px] w-[900px] backdrop-blur-md mx-8 text-center">
+      <div className="text-white text-4xl border-[1px] border-greenbod rounded-3xl h-[780px] w-[900px] backdrop-blur-md mx-8 text-center">
         {Display}
       </div>
     </main>
